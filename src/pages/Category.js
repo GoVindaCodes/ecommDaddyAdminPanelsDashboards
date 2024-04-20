@@ -106,7 +106,7 @@ const Category = () => {
       try {
         console.log("Fetching categories...");
         const response = await requests.get('/api/category/all');
-        console.log("Categories fetched successfully:", response);
+        // console.log("Categories fetched successfully:", response);
         setCategories(response);
       } catch (error) {
         console.error('Error fetching categories:', error);
@@ -246,7 +246,7 @@ const Category = () => {
                 </TableHeader>
 
                 <CategoryTable
-                  data={categories}
+                  data={data}
                   lang={lang}
                   isCheck={isCheck}
                   categories={categories}
